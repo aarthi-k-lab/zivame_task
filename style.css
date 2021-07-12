@@ -64,15 +64,23 @@ h2{
 }
 
 ul {
-    list-style-type: none;
-    margin: 15px;
-    padding: 15px;
-    display: flex;
+  width:100%;
+  /* background: rgba(40, 34, 126, 0.8); */
+  background:black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+  
+  display:flex;
+  justify-content:space-around
   }
   
   li {
     padding:10px;
-    margin:10px;
+    /* margin:5px; */
+    
   }
 
   li p{
