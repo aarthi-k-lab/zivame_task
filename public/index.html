@@ -9,11 +9,7 @@
     
 </head>
 <body>
-    <script>
-        const hasSupport = 'loading' in HTMLImageElement.prototype;
-        document.documentElement.className = hasSupport ? 'pass' : 'fail';
-        document.querySelector('span').textContent = hasSupport;
-      </script>
+    
     <header>
         <a href="#"><h1>Movies</h1></a>
         
@@ -28,10 +24,10 @@
         
     </header>
     <ul>
-        <li><p onClick="setCategory('popular')">Popular</p></li>
-        <li><p onClick="setCategory('toprated')">Top Rated</p></li>
-        <li><p onClick="setCategory('upcoming')">Upcoming</p></li>
-        <li><p onClick="setCategory('nowplaying')">Now Playing</p></li>
+        <li><p onClick="changeCategory('popular')">Popular</p></li>
+        <li><p onClick="changeCategory('toprated')">Top Rated</p></li>
+        <li><p onClick="changeCategory('upcoming')">Upcoming</p></li>
+        <li><p onClick="changeCategory('nowplaying')">Now Playing</p></li>
       </ul>
 
     <main  id="main"></main>
@@ -39,8 +35,5 @@
         <ul> <!--pages or li are comes from javascript --> </ul>
       </div>
 <script src="../src/script.js"></script>
-<script type="text/javascript">
-    showMovies();    
-  </script>
 </body>
 </html>

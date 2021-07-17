@@ -2,7 +2,7 @@
 
 ## Introduction
 
-###### Movie List App is a simple javascript project which fetch and display the movie list to the user.
+#### Movie List App is a simple javascript project which fetch and display the movie list to the user.
 
 - This app uses the open-source movie API from TMDB to create a movie listing.
 - Lazy loading technique is used to load the movies and once loaded the movies are displayed in grid format category wise.
