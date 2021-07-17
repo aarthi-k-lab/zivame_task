@@ -9,6 +9,11 @@
     
 </head>
 <body>
+    <script>
+        const hasSupport = 'loading' in HTMLImageElement.prototype;
+        document.documentElement.className = hasSupport ? 'pass' : 'fail';
+        document.querySelector('span').textContent = hasSupport;
+      </script>
     <header>
         <a href="#"><h1>Movies</h1></a>
         

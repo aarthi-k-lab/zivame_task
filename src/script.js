@@ -56,6 +56,7 @@ let displayMoviesInDom = () => {
     text.innerHTML = `${element.original_title}`;
     image.src =
       element.poster_path !== null ? IMGPATH + element.poster_path : "";
+    image.setAttribute("loading", "lazy");
     el.appendChild(image);
     el.appendChild(text);
     main.appendChild(el);
@@ -102,7 +103,6 @@ let total = totalPages;
 createPagination(total, pageNo);
 
 function createPagination(totalPages, page) {
-  console.log(totalPages, page);
   let liTag = "";
   let active;
   let beforePage = page - 1;
